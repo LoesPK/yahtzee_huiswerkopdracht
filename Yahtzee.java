@@ -21,7 +21,7 @@ class YahtzeeSpel{
 		while(doorgaan) {
 			String ingave = scanner.nextLine();
 			switch(ingave) {
-				case "d":  System.out.println("Het werkt");
+				case "d":  System.out.println("Het werkt jeej");
 					break;
 				case "q": System.out.println("Het spel stopt.");
 					break;
