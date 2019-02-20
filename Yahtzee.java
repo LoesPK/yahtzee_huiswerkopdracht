@@ -19,22 +19,24 @@ class YahtzeeSpel{
 	ArrayList<Integer> dobbelstenen = new ArrayList<Integer>(); 
 	
 	public YahtzeeSpel() {
+		//aparte methode (met loop?)
+
 		dobbelstenen.add(YahtzeeSpel.Werpen());
 		dobbelstenen.add(YahtzeeSpel.Werpen());
 		dobbelstenen.add(YahtzeeSpel.Werpen());
 		dobbelstenen.add(YahtzeeSpel.Werpen());
 		dobbelstenen.add(YahtzeeSpel.Werpen());
 		dobbelstenen.add(YahtzeeSpel.Werpen());
+
 	}
 	//onderstaande  method om het spel te starten. wordt aangeroepen in main.
 	void Spelen() {
 		while(doorgaan) {
 			String ingave = scanner.nextLine();
 			switch(ingave) {
-				case "d": 
+				case " ": 
 					
 					for(int i : dobbelstenen) {
-						//YahtzeeSpel.Werpen(); werkt niet
 						System.out.println(i);
 					}
 					break;
